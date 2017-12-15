@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "public",
+    "redirects": [
+      {
+        "source": "/tag/:tag*/",
+        "destination": "/tags/:tag*",
+        "type": 301
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: dgageot/hugo
+    steps:
+      - checkout
+      - run: hugo
+      - run: |
+          [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --non-interactive

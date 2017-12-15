@@ -1,0 +1,79 @@
+baseURL = "https://blog.javabien.net"
+title = "Java Bien!"
+copyright = ""
+theme = "minimo"
+disqusShortname = "javabien"
+googleAnalytics = "UA-205807-3"
+
+Paginate = 999
+preserveTaxonomyNames = true
+enableRobotsTXT = true
+pygmentsCodefences = true
+defaultContentLanguage = "en"
+pluralizeListTitles = false
+
+[params.info]
+description = "David Gageot, Java & Agile"
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+gopher = "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/580db8431bcba8256336184e800855d2a8bad22f.png" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "david@gageot.net"
+startYear = "2004"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
+hideEntryNavigation = ["page"] # boolean / array of sections
+recentPostsLength = 5
+hideSocialMenu = false
+showReadingTime = true
+noTermCloudShuffle = true
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "dgageot" # Twitter page username
+
+[params.seo]
+titleSeparator = "•"
+
+[params.social]
+codepen = "dgageot"
+email = "david@gageot.net"
+facebook = "dgageot"
+github = "dgageot"
+instagram = "dgageot"
+linkedin = "davidgageot"
+twitter = "dgageot"
+telegram = "dgageot"
+
+[params.social.config]
+platforms = ["github","twitter","email","linkedin"]
+
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
