@@ -1,4 +1,7 @@
 {
   "short_name": "JavaBien",
-  "name": "Java Bien!"
+  "name": "Java Bien!",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FF6200"
 }
