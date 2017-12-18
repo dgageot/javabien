@@ -71,6 +71,18 @@ page = "/:slug/"
 [blackfriday]
 hrefTargetBlank = true
 
+[[menu.main]]
+name = "Home"
+weight = -10
+identifier = ""
+url = "/"
+
+[[menu.main]]
+name = "Repo"
+weight = 10
+identifier = ""
+url = "https://github.com/dgageot/javabien"
+
 [languages]
 # edit this block for your own language
 [languages.en]
