@@ -1,6 +1,6 @@
 # Java Bien! Blog
 
-These are the sources for https://javabien.net blog.
+These are the sources for https://blog.javabien.net blog.
 
 The blog uses those tools and services:
 
