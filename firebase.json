@@ -11,7 +11,7 @@
     "headers": [{
       "source":"**",
       "headers": [
-        {"key":"Content-Security-Policy","value":"default-src 'none';img-src 'self' https: data:; connect-src https://www.google-analytics.com www.google-analytics.com ;font-src 'self' data: fonts.gstatic.com;script-src https: http: https://www.google-analytics.com 'unsafe-inline' 'self';style-src https: 'unsafe-inline';object-src 'none';frame-ancestors 'none';base-uri 'none';form-action 'self';"},
+        {"key":"Content-Security-Policy","value":"default-src 'none';img-src 'self' https: data:; connect-src https://www.google-analytics.com www.google-analytics.com ;frame-src https://disqus.com/; font-src 'self' data: fonts.gstatic.com;script-src https: http: https://www.google-analytics.com 'unsafe-inline' 'self';style-src https: 'unsafe-inline';object-src 'none';frame-ancestors 'none';base-uri 'none';form-action 'self';"},
        {"key": "X-Content-Type-Options", "value": "nosniff"},
        {"key": "X-Frame-Options", "value": "ALLOW-FROM https://get.google.com"},
        {"key": "X-UA-Compatible", "value": "ie=edge"},
