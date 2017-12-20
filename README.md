@@ -11,7 +11,7 @@ The blog uses those tools and services:
 
 ## Test it on Google Cloud Platform
 
-[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fdgageot%2Fjavabien&page=editor&print=cloud-shell-readme.txt&open_in_editor=.)
+[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fdgageot%2Fjavabien&page=editor&tutorial=tuto.md&open_in_editor=.)
 
 ## License
 
