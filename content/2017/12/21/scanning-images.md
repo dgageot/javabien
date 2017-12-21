@@ -1,7 +1,7 @@
 ---
-title: "Vulnerabilities in Docker images"
+title: Scanning Vulnerabilities in Docker images
 date: 2017-12-21T09:35:00+01:00
-tags: ["docker","google","security scanning","java"]
+tags: ["docker","google","security scanning","java", "cve"]
 ---
 
 Part of the value proposition of Containers is improved security. By running
@@ -9,7 +9,7 @@ services inside containers, one can reduce the attack surface of an application.
 
 To properly reduce the attack surface, great care must be given to the choice
 of base images. It's very common to see Dockerfiles based on super-heavy base
-images that the application being built won't really need.
+images that the application won't need.
 
 > Multi-stage builds
 
@@ -50,19 +50,19 @@ I ran [Google Container Registry Vulnerability Scanning](https://cloud.google.co
 (currently in Alpha) on multiple Java images to compare the known
 vulnerabilities in each.
 
- + Here's the top 6 vulnerabilities found on the `java:latest` image:
+Here's the top 6 vulnerabilities found on the `java:latest` image:
 
-![Vulnerabilities in java base image](/images/scan/java.png#center)
+![Vulnerabilities in java base image](/images/scan/java.png)
 
- + Choosing the `openjdk:latest` is safer:
+Choosing the `openjdk:latest` is safer:
 
-![Vulnerabilities in openjdk base image](/images/scan/openjdk.png#center)
+![Vulnerabilities in openjdk base image](/images/scan/openjdk.png)
 
- + Even better is choosing the `openjdk:8u151-jre-alpine` flavor. Woot!
+Even better is choosing the `openjdk:8u151-jre-alpine` flavor. Woot!
 Kudos to [Natanael Copa](https://twitter.com/n_copa?lang=en) for taking such
 good care of Alpine!
 
-![Vulnerabilities in openjdk jre alpine](/images/scan/alpine.png#center)
+![Vulnerabilities in openjdk jre alpine](/images/scan/alpine.png)
 
 > Common Vulnerabilities and Exposures (CVEs)
 
@@ -76,9 +76,7 @@ example, it raises the
 [CVE-2017-15874](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15874)
 on [alpine:3.7](https://hub.docker.com/r/library/alpine/tags/3.7/). Looking at
 the [alpine packages list](https://pkgs.alpinelinux.org/package/v3.7/main/x86_64/busybox),
-we see that `alpine 3.7` is using `Busybox 1.27.2-r7` that's immune to the CVE
+we see that `alpine`&#8239;`3.7` is using `Busybox`&#8239;`1.27.2-r7` that's immune to the CVE
 as the [list of patches](https://git.alpinelinux.org/cgit/aports/tree/main/busybox) shows.
 
-As I said, Kudos to [Natanael Copa](https://twitter.com/n_copa?lang=en)!
-
-**And go scan your images!**
+**Go scan your images!**
