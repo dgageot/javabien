@@ -27,7 +27,7 @@ much easier to operate.
 Fast-forward to last week. I took a deep breath and migrated all the posts to
 plain markdown, fixed the images and cross links, imported the comments to
 Disqus, started to learn [Hugo](https://gohugo.io) (the easiest part) and chose
-a [minimal theme](http://localhost:1313/2014/).
+a [minimal theme](https://themes.gohugo.io/minimo/).
 
 Yeah! Migration done!
 
