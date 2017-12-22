@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi pas un Brown Bag Lunch avec David ?"
 date: 2012-11-05T12:00:00+01:00
-tags: ["freelance"]
+tags: ["freelance","bbl"]
 ---
 
 Comme annoncé dans mon [article précédent]({{< relref "2012/10/23/je-quitte-sonar-heureux-dy-avoir-travaille.md" >}}), je redeviens développeur indépendant à partir de mi-novembre. Cela va j'espère me permettre d'organiser quelque chose qui me tient à coeur depuis longtemps mais que j'avais du laisser de coté.
