@@ -6,6 +6,11 @@
         "source": "/tag/:tag*/",
         "destination": "/tags/:tag*",
         "type": 301
+      },
+      {
+        "source": "/feed/",
+        "destination": "/index.xml",
+        "type": 301
       }
     ],
     "headers": [{
