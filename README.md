@@ -1,3 +1,18 @@
+
+# Invitation aux Quarter Backs Meetup chez SFEIR
+
+Bonjour David
+
+Je te contacte de la part de Didier, j'anime le meet-up Quarter Backs chez sfeir 
+
+Le thème de la session du **6 Mars** est autour des containers, Didier m'a dit que tu pouvais assurer deux sujets, _kubernetes et istio_. 
+
+Le format des talks c'est *20' max*, c'est au siège de SFEIR à Neuilly sur seine et c'est à partir de *19h*
+
+À bientôt !
+
+
+
 # Java Bien! Blog
 
 These are the sources for https://blog.javabien.net blog.
