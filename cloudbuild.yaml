@@ -1,8 +1,12 @@
 steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['pull', 'dgageot/build-step-hugo']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['pull', 'dgageot/build-step-firebase']
 - name: gcr.io/cloud-builders/docker
-  args: ['build', '-f', 'build-steps/Dockerfile.hugo', '-t', 'hugo', 'build-steps']
+  args: ['build', '--cache-from', 'dgageot/build-step-hugo', '-f', 'build-steps/Dockerfile.hugo', '-t', 'hugo', 'build-steps']
 - name: gcr.io/cloud-builders/docker
-  args: ['build', '-f', 'build-steps/Dockerfile.firebase', '-t', 'firebase', 'build-steps']
+  args: ['build', '--cache-from', 'dgageot/build-step-firebase', '-f', 'build-steps/Dockerfile.firebase', '-t', 'firebase', 'build-steps']
 - name: hugo
 - name: firebase
   args: ['deploy', '-P', 'blog-dga-demo']
