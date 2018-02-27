@@ -1,0 +1,14 @@
+steps:
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-f', 'build-steps/Dockerfile.hugo', '-t', 'hugo', 'build-steps']
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-f', 'build-steps/Dockerfile.firebase', '-t', 'firebase', 'build-steps']
+- name: hugo
+- name: firebase
+  args: ['deploy', '-P', 'blog-dga-demo']
+  secretEnv: ['FIREBASE_TOKEN']
+
+secrets:
+- kmsKeyName: projects/dga-demo/locations/global/keyRings/javabien-blog/cryptoKeys/firebase-token
+  secretEnv:
+    FIREBASE_TOKEN: CiQA5cpCsFEM0MfMYMUSYMwAChhoVgVws5PAyRla6/qXOlqKU18SVwAC8LYfvH0YxgNoLMW+3g94JjA9J7LhQdMA+FmR3r0+9BnLWu4wpUwrJxOtmzl5v2eQo+4MsyKGYKvbm5V+ECKLFE8IaA/McT4WV3aUiebML8Cni4kZGg==
