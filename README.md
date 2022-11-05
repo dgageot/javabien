@@ -7,7 +7,6 @@ The blog uses those tools and services:
  + [Hugo](https://gohugo.io) to transform Mardown posts into static pages.
  + [Firebase Hosting](https://firebase.google.com/docs/hosting/) to host those
  static pages.
- + [CircleCI](https://circleci.com/) to implement a push-to-deploy.
 
 ## License
 
