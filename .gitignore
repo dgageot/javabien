@@ -1,2 +1,6 @@
 public
 .config
+.firebase
+.vscode
+node_modules
+package*.json
