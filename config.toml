@@ -94,3 +94,6 @@ weight = 1
 [params.widgets]
 homepage = ["recent_posts"]
 footer = ["social_menu"]
+
+[params.comments]
+enable = true
