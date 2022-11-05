@@ -57,9 +57,7 @@ github = "dgageot"
 instagram = "dgageot"
 linkedin = "davidgageot"
 twitter = "dgageot"
-
-[params.social.config]
-platforms = ["github","twitter","email","linkedin"]
+mastodon = "@dgageot"
 
 [taxonomies]
 author = "authors"
