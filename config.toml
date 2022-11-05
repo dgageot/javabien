@@ -18,6 +18,7 @@ title404 = "Nothing's here!"
 
 [params.assets]
 favicon = "favicon.ico"
+customCSS = ["css/custom.css"]
 gopher = "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/580db8431bcba8256336184e800855d2a8bad22f.png" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
