@@ -1,5 +1,9 @@
 p {
   margin: 0 0 1.5em;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 cite,
@@ -10,7 +14,12 @@ i {
 }
 
 blockquote {
-  margin: 0 1.5em;
+  @include font-size($font-size__blockquote);
+  font-style: italic;
+
+  margin: 0 0 1.5em;
+  padding-left: 1em;
+  border-left: 0.2em solid $color__blockquote-border;
 }
 
 address {

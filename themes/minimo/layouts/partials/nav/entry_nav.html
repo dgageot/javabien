@@ -9,43 +9,31 @@
 
 {{- if ( $.Scratch.Get "showEntryNav" ) -}}
 
-<nav class='entry-nav-container'>
-  <div class='entry-nav'>
-    {{- $pages := (where .Site.Pages "IsPage" true).ByDate -}}
+{{ if gt ( len ( where .Site.RegularPages "Section" .Section ) ) 1 }}
+<nav class='entry-nav'>
+  <div class='container'>
 
-    {{- $curUniqueID := .UniqueID -}}
-    {{- $.Scratch.Set "currentIndex" -1 -}}
-    {{- range $i, $e := $pages -}}
-      {{- if eq $e.UniqueID $curUniqueID -}}
-        {{- $.Scratch.Set "currentIndex" $i -}}
-      {{- end -}}
-    {{- end -}}
-
-    {{- $currentIndex := $.Scratch.Get "currentIndex" -}}
-    {{- $previousPage := index $pages (sub $currentIndex 1) -}}
-    {{- $nextPage := index $pages (add $currentIndex 1) -}}
-
-    {{- if $previousPage -}}
-    <div class='prev-entry'>
-      <a href='{{ $previousPage.Permalink | relURL }}'>
+    {{- if .PrevInSection -}}
+    <div class='prev-entry sep-before'>
+      <a href='{{ .PrevInSection.Permalink | relURL }}'>
         <span aria-hidden='true'>
-          {{- partial "svg/icons" "prev" -}}
+          {{- partial "svg/icon" "prev" -}}
           {{- print " " ( i18n "previous" ) -}}
         </span>
-        <span class='screen-reader'>{{ i18n "previousPost" }}: </span>
-        {{- $previousPage.Title -}}
+        <span class='screen-reader-text'>{{ i18n "previousPost" }}: </span>
+        {{- .PrevInSection.Title -}}
       </a>
     </div>
     {{- end -}}
 
-    {{- if $nextPage -}}
-    <div class='next-entry'>
-      <a href='{{ $nextPage.Permalink | relURL }}'>
-        <span class='screen-reader'>{{ i18n "nextPost" }}: </span>
-        {{- $nextPage.Title -}}
+    {{- if .NextInSection -}}
+    <div class='next-entry sep-before'>
+      <a href='{{ .NextInSection.Permalink | relURL }}'>
+        <span class='screen-reader-text'>{{ i18n "nextPost" }}: </span>
+        {{- .NextInSection.Title -}}
         <span aria-hidden='true'>
           {{- print ( i18n "next" ) " " -}}
-          {{- partial "svg/icons" "next" -}}
+          {{- partial "svg/icon" "next" -}}
         </span>
       </a>
     </div>
@@ -53,5 +41,6 @@
 
   </div>
 </nav>
+{{ end }}
 
 {{- end -}}

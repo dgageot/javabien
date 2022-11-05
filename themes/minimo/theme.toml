@@ -2,32 +2,44 @@ name = "Minimo"
 license = "MIT"
 licenselink = "https://github.com/MunifTanjim/minimo/blob/master/LICENSE"
 description = "Minimalist theme for Hugo"
-homepage = "https://minimo.netlify.com"
+homepage = "https://minimo.netlify.app"
 tags = [
   "blog",
   "minimal",
   "minimalist",
-  "responsive"
+  "responsive",
+  "google-analytics"
 ]
 features = [
   "accessibility",
+  "algolia",
   "analytics",
+  "breadcrumbs",
   "comments",
   "cover-image",
+  "disqus",
+  "entry-navigation",
   "favicon",
+  "fuse.js",
+  "isso",
+  "lunr.js",
   "multilingual",
   "multi-author",
   "opengraph",
   "pagination",
-  "entry-navigation",
+  "rtl",
+  "search",
   "shortcodes",
+  "sidebar",
   "single-column",
   "social-menu",
+  "staticman",
   "syntax-highlighting",
-  "table-of-contents"
+  "table-of-contents",
+  "utterances",
+  "widgets"
 ]
-min_version = 0.28
 
 [author]
   name = "Munif Tanjim"
-  homepage = "https://muniftanjim.com"
+  homepage = "https://muniftanjim.dev"

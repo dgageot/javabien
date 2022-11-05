@@ -9,8 +9,8 @@ Paginate = 999
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 pygmentsCodefences = true
+enableEmoji = true
 defaultContentLanguage = "en"
-pluralizeListTitles = false
 
 [params.info]
 description = "David Gageot, Java & Agile"
@@ -30,11 +30,14 @@ suffix = ""
 # date & time format: https://golang.org/pkg/time/
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
+archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
 recentPostsLength = 5
 hideSocialMenu = false
 showReadingTime = true
+#showLastmod = true
 noTermCloudShuffle = true
+#taxonomyCloudShuffle = true
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -48,14 +51,11 @@ page = "dgageot" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-codepen = "dgageot"
 email = "david@gageot.net"
-facebook = "dgageot"
 github = "dgageot"
 instagram = "dgageot"
 linkedin = "davidgageot"
 twitter = "dgageot"
-telegram = "dgageot"
 
 [params.social.config]
 platforms = ["github","twitter","email","linkedin"]
@@ -89,3 +89,7 @@ url = "https://github.com/dgageot/javabien"
 lang = "en"
 languageName = "English"
 weight = 1
+
+[params.widgets]
+homepage = ["recent_posts"]
+footer = ["social_menu"]
