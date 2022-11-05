@@ -1,5 +1,0 @@
-FROM node:9.6.1-alpine
-
-RUN yarn global add firebase-tools && yarn cache clean
-
-ENTRYPOINT ["/usr/local/bin/firebase"]
